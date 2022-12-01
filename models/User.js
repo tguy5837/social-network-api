@@ -2,7 +2,7 @@ const { Schema, model } = require("mongoose");
 const Thought = require('./Thought');
 
 const emailValidate = (email) => {
-    const regex = /^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/;
+    const regex = /^([a-zA-Z0-9_\.-]+)@([\da-zA-Z\.-]+)\.([a-z\.]{2,6})$/;
     return regex.test(email);
 };
 
